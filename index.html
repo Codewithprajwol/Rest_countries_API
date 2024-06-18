@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rest Countries API</title>
-    <link href="https://fonts.googleapis.com/css?family=Nunito:300,regular,500,600,700,800" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Nunito:300,regular,500,600,700,800" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
@@ -12,25 +12,55 @@
   <body>
     <header class="header-section">
       <div class="header-content">
-        <h2 class="title">Where in the world?</h2>
-        <h3 class="mode"><i class="fa-regular fa-moon"></i>Dark Mode</h3>
+        <h2 class="title"><a href="/">Where in the world?</a></h2>
+        <h3 class="mode"><i class="fa-regular fa-moon"></i><span id='mode-word'>Dark </span>Mode</h3>
       </div>
     </header>
     <!-- start of main tag -->
          <main>
-      <div class="countries-container">
-          <!-- <a href="#" class="country-card">
-            <img src="https://flagcdn.com/wf.svg" alt="flag">
-            <div class="card-text">
-              <h3 class="card-title">Wallis and Futuna</h3>
-              <p><b>Population: </b>81,770,990</p>
-              <p><b>Region: </b>Europe</p>
-              <p><b>Capital: </b>Berlin</p>
+          <div class="search-functionality-wrapper">
+            <div class="search-container">
+              <label for="inpt"><i class="fa-solid fa-magnifying-glass"></i></label>
+              <input id="inpt" type="text" placeholder="Search for a country...">
             </div>
-           
-          </a> -->
+
+            <select name="selected" id="select">
+              <option selected hidden>Filter by Region</option>
+              <option value="Africa">Africa</option>
+              <option value="America">America</option>
+              <option value="Asia">Asia</option>
+              <option value="Europe">Europe</option>
+              <option value="Oceania">Oceania</option>
+            </select>
+          </div>
+      <div class="countries-container">
       </div>
       
      </main>
-  </body>
+    </body>
 </html>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <a href="#" class="country-card">
+      <img src="https://flagcdn.com/wf.svg" alt="flag">
+      <div class="card-text">
+        <h3 class="card-title">Wallis and Futuna</h3>
+        <p><b>Population: </b>81,770,990</p>
+        <p><b>Region: </b>Europe</p>
+        <p><b>Capital: </b>Berlin</p>
+      </div>
+     
+    </a> -->
